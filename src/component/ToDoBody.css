@@ -1,0 +1,148 @@
+.title{
+    font-size: 3em;
+    margin-top: 70px;
+}
+
+.ToDoBody{
+    background-color: #323232;
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.toDoForm{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.addToDoInput{
+    padding: 10px 5px;
+    background-color: #212121;
+    outline: none;
+    border: none;
+    width: 60%;
+    border-radius: 5px;
+    margin-right: 5px;
+    height: 30px;
+    font-size: 23px;
+    color: #80FFDB;
+    
+}
+
+.addToDoBtn{
+    width: 22%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5800FF;
+    color: #72FFFF;
+}
+
+.addToDoBtn:hover{
+    width: 22.5%;
+    height: 47px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.emptyList{
+    color: #8fa7a3a9;
+    margin-top: 50px;
+}
+
+.todo{
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    gap: 1em;
+
+}
+
+.toDoContent{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 89%;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+.deleteBtn{
+    font-size: 30px;
+    color: #5800FF;
+    padding-right: 5px;
+}
+
+.editBtn{
+    font-size: 30px;
+    color: #5800FF;
+}
+
+.showTODOs .todo:nth-child(1){
+    margin-top: 50px;
+}
+
+.showTODOs .todo:nth-child(6n + 1){
+    background-image: linear-gradient(to right,#F637EC, #EE81B3);  
+    color: #31087B;
+}
+
+.showTODOs .todo:nth-child(6n + 2){
+    background-image: linear-gradient(to right,#2E0249, #31087B); 
+    color: #34db1e; 
+}
+
+.showTODOs .todo:nth-child(6n + 3){
+    background-image: linear-gradient(to right,#FFC23C, #EED180);  
+    color: #1a0b36;
+}
+
+.showTODOs .todo:nth-child(6n + 4){
+    background-image: linear-gradient(to right,#5BB318, #7DCE13);  
+    color: #1a0b36;
+}
+
+.showTODOs .todo:nth-child(6n + 5){
+    background-image: linear-gradient(to right,#EB4747, #FF8B8B);  
+    color: #1a0b36;
+}
+
+.showTODOs .todo:nth-child(6n + 6){
+    background-image: linear-gradient(to right,#1363DF, #47B5FF);  
+    color: #1a0b36;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 800px){
+    .title{
+        font-size: 25px;
+    }
+
+    .ToDoBody{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .todo{
+        width: 90%;
+    }
+}
